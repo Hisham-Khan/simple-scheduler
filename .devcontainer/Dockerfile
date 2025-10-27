@@ -1,6 +1,5 @@
 #
-# Copyright © 2025 pyjamabrah.com. All Rights Reserved.
-# Author: Piyush Itankar <piyush@pyjamabrah.com>
+# Author: Mohammed Hishamullah Khan <mhishamkhan@outlook.com>
 #
 
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
