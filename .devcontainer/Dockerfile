@@ -24,5 +24,8 @@ RUN sudo apt-get install --no-install-recommends -y \
   gcc-arm-none-eabi \
   gdb-multiarch
 
+RUN wget -P ~ https://github.com/cyrus-and/gdb-dashboard/raw/master/.gdbinit
+RUN pip install pygments
+
 # terminal colors with xterm
 ENV TERM xterm
