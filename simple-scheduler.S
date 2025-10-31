@@ -121,24 +121,24 @@ task3:
     b task3
 
 // Stacks for tasks - data section
-// Stack for Task 1e
+// Stack for Task 1
 .data
 .align 4
 stack_1:
-    .word 0x18
-    .word 0x19
-    .word 0x1A
-    .word 0x1B
-    .word 0x14
-    .word 0x15
-    .word 0x16
-    .word 0x17
-    .word 0x10
-    .word 0x11
-    .word 0x12
-    .word 0x13
-    .word 0x1C
-    .word 0x309
+    .word 0x18          // R8
+    .word 0x19          // R9
+    .word 0x1A          // R10
+    .word 0x1B          // R11
+    .word 0x14          // R4
+    .word 0x15          // R5
+    .word 0x16          // R6
+    .word 0x17          // R7
+    .word 0x10          // R0
+    .word 0x11          // R1
+    .word 0x12          // R2
+    .word 0x13          // R3
+    .word 0x1C          // R12
+    .word 0x309         // LR
     .word task1         // PC
     .word 0x01000000    // xPSR
 
@@ -146,41 +146,41 @@ stack_1:
 .align 4
 // Stack for Task 2
 stack_2:
-    .word 0x28
-    .word 0x29
-    .word 0x2A
-    .word 0x2B
-    .word 0x24
-    .word 0x25
-    .word 0x26
-    .word 0x27
-    .word 0x20
-    .word 0x21
-    .word 0x22
-    .word 0x23
-    .word 0x2C
-    .word 0x309
-    .word task2         // PC
+    .word 0x28          // R8
+    .word 0x29          // R9
+    .word 0x2A          // R10
+    .word 0x2B          // R11
+    .word 0x24          // R4
+    .word 0x25          // R5
+    .word 0x26          // R6
+    .word 0x27          // R7
+    .word 0x20          // R0
+    .word 0x21          // R1
+    .word 0x22          // R2
+    .word 0x23          // R3
+    .word 0x2C          // R12
+    .word 0x309         // LR
+    .word task1         // PC
     .word 0x01000000    // xPSR
 
 .data
 .align 4
 // Stack for Task 3
 stack_3:
-    .word 0x38
-    .word 0x39
-    .word 0x3A
-    .word 0x3B
-    .word 0x34
-    .word 0x35
-    .word 0x36
-    .word 0x37
-    .word 0x30
-    .word 0x31
-    .word 0x32
-    .word 0x33
-    .word 0x3C
-    .word 0x309
-    .word task3         // PC
+    .word 0x38          // R8
+    .word 0x39          // R9
+    .word 0x3A          // R10
+    .word 0x3B          // R11
+    .word 0x34          // R4
+    .word 0x35          // R5
+    .word 0x36          // R6
+    .word 0x37          // R7
+    .word 0x30          // R0
+    .word 0x31          // R1
+    .word 0x32          // R2
+    .word 0x33          // R3
+    .word 0x3C          // R12
+    .word 0x309         // LR
+    .word task1         // PC
     .word 0x01000000    // xPSR
     .zero 100
